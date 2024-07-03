@@ -1,5 +1,3 @@
-package IMDBPOMTest;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -45,12 +43,12 @@ public class IMDBlogoutTest {
             // Logout from member page
             //imdbMemberPage.clickSignoutButton();
 
-            WebElement Signout = imdbMemberPage.clickSignoutButton();
-            new Actions(getClass())
-                    .moveToElement(Signout)
-                            .click()
-                                    .perform();
-            Thread.sleep(5000);
+//            WebElement Signout = imdbMemberPage.clickSignoutButton();
+//            new Actions(getClass())
+//                    .moveToElement(Signout)
+//                            .click()
+//                                    .perform();
+//            Thread.sleep(5000);
 
 
             // Verify login page title

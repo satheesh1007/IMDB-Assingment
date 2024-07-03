@@ -1,3 +1,5 @@
+package IMDBTest;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -47,7 +49,7 @@ public class RegistrationTest {
 
         }
             // Quit the driver to close the browser
-            driver.quit();
+            //driver.quit();
         }
 
 }
