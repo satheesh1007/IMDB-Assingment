@@ -38,7 +38,10 @@ public class PreventRegistrationWithExistingEmailTest {
 
             // When I am on the account registration page
 //            String RegistrationPageTitle = "Create an IMDb account";
-//            wait.until(ExpectedConditions.titleContains(RegistrationPageTitle));
+//            wait1.until(ExpectedConditions.titleContains(RegistrationPageTitle));
+//            WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
+//            wait1.until(ExpectedConditions.titleContains("Create an IMDb account"));
+
 
 
 
@@ -48,6 +51,7 @@ public class PreventRegistrationWithExistingEmailTest {
             registrationPage.enterPassword("password123");
             registrationPage.enterConfirmPassword("password123");
             registrationPage.clickCreateAccountButton();
+
 
 //            WebDriverWait wait = new WebDriverWait(driver, 20);
 //            wait.until(ExpectedConditions.visibilityOfElementLocated(registrationPage.isErrorDisplayed()));

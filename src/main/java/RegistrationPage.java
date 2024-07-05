@@ -9,7 +9,7 @@ public class RegistrationPage {
         private final By emailInput = By.id("ap_email");
         private final By passwordInput = By.id("ap_password");
         private final By confirmPasswordInput = By.id("ap_password_check");
-        private final By createAccountButton = By.id("create-account-button");
+        private final By createAccountButton = By.xpath("//input[@id='continue']");
         private final By errorMessage = By.xpath("//div[contains(text(), 'An account with this email address already exists.')]");
 
         public RegistrationPage(WebDriver driver) {
@@ -17,6 +17,7 @@ public class RegistrationPage {
         }
         public void enterCustomerName(String customerName1){
             driver.findElement(customerName).sendKeys(customerName1);
+
         }
 
         public void enterEmail(String email) {

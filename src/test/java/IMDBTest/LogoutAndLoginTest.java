@@ -2,14 +2,16 @@ package IMDBTest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class LogoutAndLoginTest {
     WebDriver driver = new ChromeDriver();
 
     @Test
-    public void logoutAndLogin() {
+    public void logoutAndLogin() throws InterruptedException {
         // Given the user is on the IMDb homepage
         driver.get("https://www.imdb.com/");
         // And I am logged into the member page
@@ -51,15 +53,24 @@ public class LogoutAndLoginTest {
         driver.findElement(By.id("ap_password")).sendKeys(password);
         driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
     }
-    private void logoutFromIMDb() {
-        driver.findElement(By.id("imdb-header-navDrawerButton")).click();
-        driver.findElement(By.id("Sign out")).click();
-        //WebElement Signout = ();
-//            new Actions(getClass())
-//                    .moveToElement(Signout)
-//                            .click()
-//                                    .perform();
+    private void logoutFromIMDb() throws InterruptedException {
+        //driver.findElement(By.id("imdb-header-navDrawerButton")).click();
+//        WebElement SignoutLink = driver.findElement(By.xpath("//a[normalize-space()='Sign out' and @class='desktop-main']"));
+//        Actions action = new Actions(driver);
+//        action.moveToElement(SignoutLink).build().perform();
+//        try {
 //            Thread.sleep(5000);
+//        } catch (Exception e)
+//        {
+//            System.out.println("Expection");
+//        }
+        driver.findElement(By.id("Sign out")).click();
+//        WebElement Signout = driver.findElement(Signout);
+//        Actions actions = new Actions(getDriver());
+//        actions.moveToElement(Signout);
+//        actions.click();
+//        actions.perform();
+//        Thread.sleep(5000);
 
 
     }

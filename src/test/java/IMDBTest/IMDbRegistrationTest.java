@@ -5,50 +5,35 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.Test;
-
-import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 public class IMDbRegistrationTest {
-    @Test
-    public void preventRegistrationWithExistingEmail() {
-
+    public static void main(String[] args) {
+        //System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
         WebDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
+        // Navigate to IMDb homepage
+        driver.get("https://www.imdb.com/");
 
+        // Click on the 'Menu' to view the Menu panel
+        driver.findElement(By.id("imdbHeader-navDrawerOpen")).click();
 
-        try {
-            // Navigate to IMDb homepage
-            driver.get("https://www.imdb.com/");
+        // Select the 'Top 250 Movies' sub-link
+        driver.findElement(By.xpath("//a[contains(.,'Top 250 Movies')]")).click();
 
-            // Click the 'Sign In' link
-            driver.findElement(By.linkText("Sign In")).click();
-
-            // Click the 'Create a New Account' link
-            driver.findElement(By.linkText("Create a New Account")).click();
-
-            // Verify redirection to account registration page
-            Assert.assertTrue(driver.getTitle().contains("Registration"), "Not on the registration page");
-
-            // Fill in the registration form with an existing email
-            driver.findElement(By.id("ap_customer_name")).sendKeys("Test User");
-            driver.findElement(By.id("ap_email")).sendKeys("testemail@gmail.com");
-            driver.findElement(By.id("ap_password")).sendKeys("Password123!");
-            driver.findElement(By.id("ap_password_check")).sendKeys("Password123!");
-
-            // Submit the registration form
-            driver.findElement(By.id("continue")).click();
-
-            // Verify the error message for existing email
-            WebElement errorMessage = driver.findElement(By.xpath("//div[@id='auth-error-message-box']//span"));
-            Assert.assertTrue(errorMessage.isDisplayed(), "Error message not displayed");
-            Assert.assertTrue(errorMessage.getText().contains("already in use"), "Error message text is incorrect or missing");
-
-        } finally {
-            // Quit the driver to close the browser
-            driver.quit();
+        // Collect all movies with a 9+ rating into an ArrayList
+        List<WebElement> movies = driver.findElements(By.xpath("//td[@class='ratingColumn']//strong[contains(text(), '9')]"));
+        ArrayList<String> movieTitles = new ArrayList<>();
+        for (WebElement movie : movies) {
+            movieTitles.add(movie.findElement(By.xpath("./ancestor::td/preceding-sibling::td/a")).getText());
         }
+
+        // Validate the number of movies is 7 in the ArrayList
+        Assert.assertEquals(movieTitles.size(), 7);
+
+        // Validate that the movie "The Shawshank Redemption" is listed in the ArrayList
+        Assert.assertTrue(movieTitles.contains("The Shawshank Redemption"));
     }
 }
 

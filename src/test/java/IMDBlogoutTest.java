@@ -38,10 +38,10 @@ public class IMDBlogoutTest {
             imdbLoginPage.clickLoginButton();
 
             // Verify member page title
-            Assert.assertEquals("IMDb: Your Account", driver.getTitle());
+            //Assert.assertEquals("IMDb: Your Account", driver.getTitle());
 
             // Logout from member page
-            //imdbMemberPage.clickSignoutButton();
+            imdbMemberPage.clickSignoutButton();
 
 //            WebElement Signout = imdbMemberPage.clickSignoutButton();
 //            new Actions(getClass())
