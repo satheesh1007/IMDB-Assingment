@@ -47,8 +47,8 @@ public class ValidateTopMoviesTest {
                     System.out.println(movieTitles);
                 }
             }
-            Assert.assertEquals(7,movieTitle.size());
 
+            Assert.assertEquals(7,movieTitle.size());
             Assert.assertTrue(movieTitle.contains("The Shawshank Redemption"));
 
        // assertEquals("number of movies with 9+ rating is not 7",7, topRatedMovies.size());

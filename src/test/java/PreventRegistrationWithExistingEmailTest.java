@@ -1,14 +1,10 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
 
 
 public class PreventRegistrationWithExistingEmailTest {
@@ -36,28 +32,18 @@ public class PreventRegistrationWithExistingEmailTest {
             imdbHomePage.clickSignInLink();
             imdbHomePage.clickCreateAccountLink();
 
-            // When I am on the account registration page
-//            String RegistrationPageTitle = "Create an IMDb account";
-//            wait1.until(ExpectedConditions.titleContains(RegistrationPageTitle));
-//            WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
-//            wait1.until(ExpectedConditions.titleContains("Create an IMDb account"));
-
-
-
-
             // When I attempt to register with an email "testemail@gmail.com" that is already in use
             registrationPage.enterCustomerName("testuser");
-            registrationPage.enterEmail("testemail@gmail.com");
+            String email = "testemail@gmail.com";
+            registrationPage.enterEmail(email);
             registrationPage.enterPassword("password123");
             registrationPage.enterConfirmPassword("password123");
             registrationPage.clickCreateAccountButton();
 
-
-//            WebDriverWait wait = new WebDriverWait(driver, 20);
-//            wait.until(ExpectedConditions.visibilityOfElementLocated(registrationPage.isErrorDisplayed()));
-
             // Then I should see an error message displayed and not be allowed to complete the registration
-            Assert.assertTrue(registrationPage.isErrorDisplayed());
+            String expectedErrorMessage = "You indicated you're a new customer, but an account already exists with the email address "+email+".";
+           String error = registrationPage.GetText();
+            Assert.assertEquals(error,expectedErrorMessage);
         }
 
         @AfterMethod

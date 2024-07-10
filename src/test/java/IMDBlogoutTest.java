@@ -1,14 +1,9 @@
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import javax.swing.*;
-import java.time.Duration;
 
 public class IMDBlogoutTest {
         private WebDriver driver;
@@ -38,10 +33,12 @@ public class IMDBlogoutTest {
             imdbLoginPage.clickLoginButton();
 
             // Verify member page title
-            //Assert.assertEquals("IMDb: Your Account", driver.getTitle());
+            Assert.assertEquals("IMDb: Your Account", driver.getTitle());
 
             // Logout from member page
             imdbMemberPage.clickSignoutButton();
+
+
 
 //            WebElement Signout = imdbMemberPage.clickSignoutButton();
 //            new Actions(getClass())
