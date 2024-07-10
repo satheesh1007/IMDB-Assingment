@@ -29,7 +29,7 @@ public class IMDBlogoutTest {
             // Login to member page
             imdbHomePage.clickSignInLink();
             imdbHomePage.clickGetSignInLink();
-            imdbLoginPage.fillInLoginCredentials("satheeshrr1012@gmail.com", "Password123!");
+            imdbLoginPage.fillInLoginCredentials("satheesh1012@gmail.com", "Password123!");
             imdbLoginPage.clickLoginButton();
 
             // Verify member page title
