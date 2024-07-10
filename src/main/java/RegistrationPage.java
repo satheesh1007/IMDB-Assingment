@@ -12,7 +12,6 @@ public class RegistrationPage {
         private final By createAccountButton = By.xpath("//input[@id='continue']");
         private final By errorMessage = By.xpath("//span[@class='a-list-item']");
 
-                //By.xpath("//div[contains(text(), 'An account with this email address already exists.')]");
 
         public RegistrationPage(WebDriver driver) {
             this.driver = driver;
