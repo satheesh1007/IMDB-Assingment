@@ -42,13 +42,13 @@ public class PreventRegistrationWithExistingEmailTest {
 
             // Then I should see an error message displayed and not be allowed to complete the registration
             String expectedErrorMessage = "You indicated you're a new customer, but an account already exists with the email address "+email+".";
-           String error = registrationPage.GetText();
+            String error = registrationPage.GetText();
             Assert.assertEquals(error,expectedErrorMessage);
         }
 
         @AfterMethod
         public void teardown() {
-            driver.quit();
+            //driver.quit();
         }
     }
 

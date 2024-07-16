@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="26eda46b-a967-4d07-a180-84bb4688be5c" name="Changes" comment="addpush">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IMDBTest/ValidateTopMoviesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IMDBTest/ValidateTopMoviesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IMDBlogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IMDBlogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PreventRegistrationWithExistingEmailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PreventRegistrationWithExistingEmailTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +30,13 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/IMDbHomePage.java" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/IMDbMemberPage.java" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/RegistrationPage.java" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/IMDBTest.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/IMDBTest/IMDBPreventRegistrationWithExistingEmail.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/IMDBTest/LogoutAndLoginTest.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/IMDBTest/RegistrationTest.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/IMDBTest/ValidateTopMoviesTest.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/IMDBlogoutTest.java" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/IMDbRegistrationTest.java" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/RegistrationTest.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/PreventRegistrationWithExistingEmailTest.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,6 +59,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/user/IdeaProjects/IMDB-Assingment/src/test/java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
@@ -62,23 +70,11 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LogoutAndLoginTest.logoutAndLogin">
-    <configuration name="IMDBTest.preventRegistrationWithExistingEmail" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IMDB-Assingment" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IMDBTest" />
-      <option name="METHOD_NAME" value="preventRegistrationWithExistingEmail" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.IMDBlogoutTest.logoutAndLoginFunctionality">
     <configuration name="IMDBlogoutTest.logoutAndLoginFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IMDB-Assingment" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IMDBPOMTest.IMDBlogoutTest" />
+      <option name="MAIN_CLASS_NAME" value="IMDBlogoutTest" />
       <option name="METHOD_NAME" value="logoutAndLoginFunctionality" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -87,45 +83,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogoutAndLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IMDB-Assingment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="IMDBTest" />
-      <option name="MAIN_CLASS_NAME" value="LogoutAndLoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogoutAndLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IMDB-Assingment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="IMDBTest" />
-      <option name="MAIN_CLASS_NAME" value="LogoutAndLoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogoutAndLoginTest.logoutAndLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PreventRegistrationWithExistingEmailTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IMDB-Assingment" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LogoutAndLoginTest" />
-      <option name="METHOD_NAME" value="logoutAndLogin" />
+      <option name="MAIN_CLASS_NAME" value="PreventRegistrationWithExistingEmailTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PreventRegistrationWithExistingEmailTest.preventRegistrationWithExistingEmail (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IMDB-Assingment" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PreventRegistrationWithExistingEmailTest" />
+      <option name="METHOD_NAME" value="preventRegistrationWithExistingEmail" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -133,22 +106,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PreventRegistrationWithExistingEmailTest.preventRegistrationWithExistingEmail" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IMDB-Assingment" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="PreventRegistrationWithExistingEmailTest" />
+      <option name="METHOD_NAME" value="preventRegistrationWithExistingEmail" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest.navigateToAccountRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ValidateTopMoviesTest.validatetopmovies" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IMDB-Assingment" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
-      <option name="METHOD_NAME" value="navigateToAccountRegistration" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IMDBTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="IMDBTest" />
+      <option name="MAIN_CLASS_NAME" value="IMDBTest.ValidateTopMoviesTest" />
+      <option name="METHOD_NAME" value="validatetopmovies" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -158,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LogoutAndLoginTest.logoutAndLogin" />
-        <item itemvalue="TestNG.RegistrationTest" />
-        <item itemvalue="TestNG.RegistrationTest.navigateToAccountRegistration" />
-        <item itemvalue="TestNG.IMDBTest.preventRegistrationWithExistingEmail" />
         <item itemvalue="TestNG.IMDBlogoutTest.logoutAndLoginFunctionality" />
+        <item itemvalue="TestNG.PreventRegistrationWithExistingEmailTest.preventRegistrationWithExistingEmail" />
+        <item itemvalue="TestNG.PreventRegistrationWithExistingEmailTest.preventRegistrationWithExistingEmail (1)" />
+        <item itemvalue="TestNG.ValidateTopMoviesTest.validatetopmovies" />
+        <item itemvalue="TestNG.PreventRegistrationWithExistingEmailTest" />
       </list>
     </recent_temporary>
   </component>
@@ -183,12 +163,78 @@
       <option name="project" value="LOCAL" />
       <updated>1719946612256</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="addpush">
+      <option name="closed" value="true" />
+      <created>1719989577809</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719989577809</updated>
+    </task>
+    <task id="LOCAL-00003" summary="addpush">
+      <option name="closed" value="true" />
+      <created>1720167294574</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720167294597</updated>
+    </task>
+    <task id="LOCAL-00004" summary="addpush">
+      <option name="closed" value="true" />
+      <created>1720595981808</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720595981808</updated>
+    </task>
+    <task id="LOCAL-00005" summary="addpush">
+      <option name="closed" value="true" />
+      <created>1720616135664</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720616135687</updated>
+    </task>
+    <task id="LOCAL-00006" summary="addpush">
+      <option name="closed" value="true" />
+      <created>1720616196461</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720616196461</updated>
+    </task>
+    <task id="LOCAL-00007" summary="addpush">
+      <option name="closed" value="true" />
+      <created>1720616433282</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720616433282</updated>
+    </task>
+    <task id="LOCAL-00008" summary="addpush">
+      <option name="closed" value="true" />
+      <created>1720616440151</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720616440151</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1c3293a7-0f19-4689-b04b-d5302b080dd2" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="1c3293a7-0f19-4689-b04b-d5302b080dd2">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>

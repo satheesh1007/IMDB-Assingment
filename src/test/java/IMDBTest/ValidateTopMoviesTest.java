@@ -19,7 +19,7 @@ public class ValidateTopMoviesTest {
 
         WebDriver driver = new ChromeDriver();
        driver.manage().window().maximize();
-       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         //WebDriverWait wait = new WebDriverWait(driver,10);
 //        try {
 
@@ -28,9 +28,9 @@ public class ValidateTopMoviesTest {
             WebElement menubutton = driver.findElement(By.id("imdbHeader-navDrawerOpen"));
             menubutton.click();
 
-            WebElement top250link = driver.findElement(By.xpath("//span[normalize-space()='Top 250 Movies']"));
+            WebElement top250link = driver.findElement(By.xpath("//span[contains(text(),'Top 250 Movies')]"));
             top250link.click();
-            Thread.sleep(10000);
+            Thread.sleep(5000);
 
 
             List<WebElement> movieElements = driver.findElements(By.xpath("//td[@class='ratingColumn']//strong[contains(text(),'9')]"));
